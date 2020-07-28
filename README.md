@@ -1,2 +1,2 @@
 # data-structures
-Data Structures : Arrays, Linked List, Hash Table, Stack, Queue, Tree (Python)
+Data Structures : Arrays, Linked List, Hash Table, Stack, Queue, Tree (Python) to help people.
