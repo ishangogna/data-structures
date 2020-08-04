@@ -25,11 +25,13 @@ class LinkedList():
             return
         else:
             currentNode = self.head
+            llstr = ''
             while True:
                 if currentNode is None:
                     break
-                print(currentNode.data)
+                llstr = llstr + str(currentNode.data) + '=>'
                 currentNode = currentNode.next
+            print(llstr)
 
     def getLength(self):
         currentNode = self.head
