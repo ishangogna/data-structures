@@ -33,49 +33,19 @@ class LinkedList():
                 currentNode = currentNode.next
             print(llstr)
 
-    def getLength(self):
-        currentNode = self.head
-        while True:
-            if currentNode is None:
-                break
-            self.length += 1
-            currentNode = currentNode.next
-        return self.length
+    def insertNodes(self, listOfNodes):
+        for node in listOfNodes:
+            self.insert(node)
 
-    def findFromEnd(self, position):
-        length = self.getLength()
-        indexOfNode = length-position
-        currentPosition = 0
-        lastNode = self.head
-        while currentPosition < indexOfNode :
-            lastNode = lastNode.next
-            currentPosition += 1
-        print(str(position) + 'th node from the end is : ' + str(lastNode.data))
 
-    
 
 node1 = Node(1)
 node2 = Node(2)
 node3 = Node(3)
 node4 = Node(4)
 node5 = Node(5)
-node6 = Node(6)
-node7 = Node(7)
-node8 = Node(8)
-node9 = Node(9)
-node10 = Node(10)
-linkedList = LinkedList()
-linkedList.insert(node1)
-linkedList.insert(node2)
-linkedList.insert(node3)
-linkedList.insert(node4)
-linkedList.insert(node5)
-linkedList.insert(node6)
-linkedList.insert(node7)
-linkedList.insert(node8)
-linkedList.insert(node9)
-linkedList.insert(node10)
 
+linkedList = LinkedList()
+linkedList.insertNodes([node1, node2, node3, node4, node5])
 
 linkedList.printList()
-linkedList.findFromEnd(3)
